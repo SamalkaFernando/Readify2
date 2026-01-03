@@ -12,7 +12,7 @@ const bookData = [
         title: "Harry Potter and the Sorcerer's Stone",
         author: "J.K. Rowling",
         genre: "Fantasy",
-        image: "/Images/Harry Potter.jpg",
+        image: "Images/Harry Potter.jpg",
         synopsis: "A young boy discovers he is a wizard and attends Hogwarts.",
         series: ["Harry Potter and the Chamber of Secrets", "Harry Potter and the Prisoner of Azkaban"],
         reviews: [
@@ -25,7 +25,7 @@ const bookData = [
         title: "The Hobbit",
         author: "J.R.R. Tolkien",
         genre: "Fantasy",
-        image: "/Images/The Hobbit.jpg",
+        image: "Images/The Hobbit.jpg",
         synopsis: "Bilbo Baggins joins a group of dwarves on a dangerous quest to reclaim their homeland, discovering courage and wisdom through adventure.",
         series: [
             "The Lord of the Rings",
@@ -41,7 +41,7 @@ const bookData = [
         title: "The Name of the Wind",
         author: "Patrick Rothfuss",
         genre: "Fantasy",
-        image: "/Images/The name of the wind.jpg",
+        image: "Images/The name of the wind.jpg",
         synopsis: "Kvothe recounts his extraordinary life filled with tragedy, magic, and pursuit of forbidden knowledge.",
         series: [
             "The Wise Man's Fear",
@@ -57,7 +57,7 @@ const bookData = [
         title: "Mistborn: The Final Empire",
         author: "Brandon Sanderson",
         genre: "Fantasy",
-        image: "/Images/Mistborn.jpg",
+        image: "Images/Mistborn.jpg",
         synopsis: "In a world ruled by an immortal tyrant, a street thief discovers magical powers that could ignite rebellion.",
         series: [
             "The Lost Metal",
@@ -73,7 +73,7 @@ const bookData = [
         title: "A Game of Thrones",
         author: "George R.R Martin",
         genre: "Fantasy",
-        image: "/Images/A Game of Thrones.jpg",
+        image: "Images/A Game of Thrones.jpg",
         synopsis: "Noble families plot for control of the Iron Throne while an ancient supernatural threat emerges from the far North.",
         series: [
             "Fire and Blood",
@@ -89,7 +89,7 @@ const bookData = [
         title: "Percy Jackson and the Olympians: The Lightning Thief",
         author: "Rick Riordan",
         genre: "Fantasy",
-        image: "/Images/Percy Jackson.jpg",
+        image: "Images/Percy Jackson.jpg",
         synopsis: "Percy Jackson learns he is a demigod and embarks on a journey to prevent a war between the Greek gods.",
         series: [
             "The Sea of Monsters",
@@ -106,7 +106,7 @@ const bookData = [
         title: "Dune",
         author: "Frank Herbert",
         genre: "Science-Fiction",
-        image: "/Images/Dune.jpg",
+        image: "Images/Dune.jpg",
         synopsis: "Paul Atreides is thrust into political and spiritual conflict on the desert planet Arrakis.",
         series: [
             "Dune Messiah",
@@ -122,7 +122,7 @@ const bookData = [
         title: "Ender's Game",
         author: "Orson Scott Card",
         genre: "Science-Fiction",
-        image: "/Images/Ender's Game.jpg",
+        image: "Images/Ender's Game.jpg",
         synopsis: "A gifted child is trained to become humanity's ultimate military commander against aliens.",
         series: [
             "Speaker for the Dead",
@@ -138,7 +138,7 @@ const bookData = [
         title: "Ready Player One",
         author: "Ernest Cline",
         genre: "Science-Fiction",
-        image: "/Images/Ready Player One.jpg",
+        image: "Images/Ready Player One.jpg",
         synopsis: "A teenage gamer competes in a massive virtual reality treasure hunt against rivals and corporate threats.",
         series: [
             "Ready Player Two"
@@ -153,7 +153,7 @@ const bookData = [
         title: "Foundation",
         author: "Isaac Asimov",
         genre: "Science-Fiction",
-        image: "/Images/Foundation.jpg",
+        image: "Images/Foundation.jpg",
         synopsis: "Hari Seldon predicts the collapse of the galactic empire and creates a foundation to preserve knowledge.",
         series: [
             "Foundation and Empire",
@@ -169,7 +169,7 @@ const bookData = [
         title: "Neuromancer",
         author: "William Gibson",
         genre: "Science-Fiction",
-        image: "/Images/Neuromancer.jpg",
+        image: "Images/Neuromancer.jpg",
         synopsis: "A washed-up hacker takes on a final dangerous job in a cyberpunk world dominated by AI and megacorporations.",
         series: [
             "Count Zero",
@@ -185,7 +185,7 @@ const bookData = [
         title: "Snow Crash",
         author: "Neal Stephenson",
         genre: "Science-Fiction",
-        image: "/Images/Snow Crash.jpg",
+        image: "Images/Snow Crash.jpg",
         synopsis: "A hacker uncovers a virtual virus threatening digital and human worlds.",
         series: ["None"],
         reviews: [
@@ -198,7 +198,7 @@ const bookData = [
         title: "The Girl with the Dragon Tattoo",
         author: "Stieg Larsson",
         genre: "Mystery",
-        image: "/Images/The Girl with the Dragon Tattoo.jpg",
+        image: "Images/The Girl with the Dragon Tattoo.jpg",
         synopsis: "Journalist Mikael Blomkvist and hacker Lisbeth Salander investigate a decades-old disappearance tied to a powerful family.",
         series: [
             "The Girl Who Played with Fire"
@@ -213,7 +213,7 @@ const bookData = [
         title: "Murder on the Orient Express",
         author: "Agatha Christie",
         genre: "Mystery",
-        image: "/Images/Murder on the Orient Express.jpg",
+        image: "Images/Murder on the Orient Express.jpg",
         synopsis: "Detective Hercule Poirot must solve a murder on a luxury train where every passenger could be guilty.",
         series: [
             "None"
@@ -228,7 +228,7 @@ const bookData = [
         title: "The Da Vinci Code",
         author: "Dan Brown",
         genre: "Mystery", 
-        image: "/Images/The Da Vinci Code.jpg",
+        image: "Images/The Da Vinci Code.jpg",
         synopsis: "Cryptologist Robert Langdon uncovers religious secrets leading to a dangerous conspiracy.",
         series: [
             "Origin",
@@ -244,7 +244,7 @@ const bookData = [
         title: "The Cuckoo's Calling",
         author: "Robert Galbraith",
         genre: "Mystery",
-        image: "/Images/The Cuckoo's Calling.jpg",
+        image: "Images/The Cuckoo's Calling.jpg",
         synopsis: "Private detective Cormoran Strike investigates the supposed suicide of a famous model, uncovering murder.",
         series: [
             "None"
@@ -259,7 +259,7 @@ const bookData = [
         title: "In the Woods",
         author: "Tana French",
         genre: "Mystery",
-        image: "/Images/In the Woods.jpg",
+        image: "Images/In the Woods.jpg",
         synopsis: "Detective Rob Ryan investigates a child’s murder eerily connected to trauma from his past.",
         series: [
             "None"
@@ -274,7 +274,7 @@ const bookData = [
         title: "Big Little Lies",
         author: "Liane Moriarty",
         genre: "Mystery",
-        image: "/Images/Big Little Lies.jpg",
+        image: "Images/Big Little Lies.jpg",
         synopsis: "Secrets and lies among parents escalate to a shocking death, revealing social tensions.",
         series: [
             "None"
@@ -289,7 +289,7 @@ const bookData = [
         title: "Pride and Prejudice",
         author: "Jane Austen",
         genre: "Romance",
-        image: "/Images/Pride and Prejudice.jpg",
+        image: "Images/Pride and Prejudice.jpg",
         synopsis: "Elizabeth Bennet navigates social pressures and misunderstandings while forming a complex romance with Mr. Darcy.",
         series: [
             "None"
@@ -304,7 +304,7 @@ const bookData = [
         title: "Me Before You",
         author: "Jojo Moyes",
         genre: "Romance",
-        image: "/Images/Me Before You.jpg",
+        image: "Images/Me Before You.jpg",
         synopsis: "A young woman cares for a paralyzed man, learning about love, independence, and life-changing choices.",
         series: [
             "After You",
@@ -320,7 +320,7 @@ const bookData = [
         title: "The Notebook",
         author: "Nicholas Sparks",
         genre: "Romance",
-        image: "/Images/The Notebook.jpg",
+        image: "Images/The Notebook.jpg",
         synopsis: "A lifelong love story unfolds between two lovers separated by circumstance but reunited by fate.",
         series: ["None"],
         reviews: [
@@ -333,7 +333,7 @@ const bookData = [
         title: "Outlander",
         author: "Diana Gabaldon",
         genre: "Romance",
-        image: "/Images/Outlander.jpg",
+        image: "Images/Outlander.jpg",
         synopsis: "A WWII nurse is transported to 18th-century Scotland, encountering romance, political intrigue, and danger.",
         series: [
             "Dragonfly in Amber",
@@ -350,7 +350,7 @@ const bookData = [
         title: "The Fault in Our Stars",
         author: "John Green",
         genre: "Romance",
-        image: "/Images/The Fault in Our Stars.jpg",
+        image: "Images/The Fault in Our Stars.jpg",
         synopsis: "Two teenagers with terminal illnesses form a deep, transformative bond.",
         series: ["None"],
         reviews: [
@@ -363,7 +363,7 @@ const bookData = [
         title: "Twilight",
         author: "Stephanie Meyer",
         genre: "Romance",
-        image: "/Images/Twilight.jpg",
+        image: "Images/Twilight.jpg",
         synopsis: "A teenage girl falls in love with a vampire, entering a dangerous and supernatural world.",
         series: [
             "New Moon",
@@ -379,7 +379,7 @@ const bookData = [
         title: "The Time Traveller's Wife",
         author: "Audrey Niffenegger",
         genre: "Romance",
-        image: "/Images/The Time Traveller's Wife.jpg",
+        image: "Images/The Time Traveller's Wife.jpg",
         synopsis: "A couple struggles to maintain love as one involuntarily travels through time.",
         series: [
             "None"
@@ -394,7 +394,7 @@ const bookData = [
         title: "The Shining",
         author: "Stephen King",
         genre: "Horror",
-        image: "/Images/The Shining.jpg",
+        image: "Images/The Shining.jpg",
         synopsis: "A family isolated in a haunted hotel confronts supernatural forces as the father descends into madness.",
         series: [
             "Doctor Sleep"
@@ -409,7 +409,7 @@ const bookData = [
         title: "Dracula",
         author: "Bram Stoker",
         genre: "Horror",
-        image: "/Images/Dracula.jpg",
+        image: "Images/Dracula.jpg",
         synopsis: "Jonathan Harker encounters Count Dracula, whose thirst for blood threatens his life and Victorian society.",
         series: ["None"],
         reviews: [
@@ -422,7 +422,7 @@ const bookData = [
         title: "The Haunting of Hill House",
         author: "Shirley Jackson",
         genre: "Horror",
-        image: "/Images/The Haunting of Hill House.jpg",
+        image: "Images/The Haunting of Hill House.jpg",
         synopsis: "Guests at a haunted mansion confront their fears as the house manipulates them.",
         series: [
             "None"
@@ -437,7 +437,7 @@ const bookData = [
         title: "Bird Box",
         author: "Josh Malerman",
         genre: "Horror",
-        image: "/Images/Bird Box.jpg",
+        image: "Images/Bird Box.jpg",
         synopsis: "Survivors navigate a world where unseen creatures drive people to madness, forcing them to live blindfolded.",
         series: [
             "Malorie"
@@ -452,7 +452,7 @@ const bookData = [
         title: "Hell House",
         author: "Richard Matheson",
         genre: "Horror",
-        image: "/Images/Hell House.jpg",
+        image: "Images/Hell House.jpg",
         synopsis: "Investigators enter a notoriously haunted mansion to determine whether the supernatural is real.",
         series: ["None"],
         reviews: [
@@ -465,7 +465,7 @@ const bookData = [
         title: "The Girl on the Train",
         author: "Paula Hawkins",
         genre: "Thriller",
-        image: "/Images/The Girl on the Train.jpg",
+        image: "Images/The Girl on the Train.jpg",
         synopsis: "A woman becomes entangled in a missing person investigation, uncovering secrets that change her understanding of reality.",
         series: ["None"],
         reviews: [
@@ -477,7 +477,7 @@ const bookData = [
         title: "The Silent Patient",
         author: "Alex Michaelides",
         genre: "Thriller",
-        image: "/Images/The Silent Patient.jpg",
+        image: "Images/The Silent Patient.jpg",
         synopsis: "A psychotherapist attempts to unravel why a woman stops speaking after allegedly murdering her husband.",
         series: ["None"],
         reviews: [
@@ -490,7 +490,7 @@ const bookData = [
         title: "Gone Girl",
         author: "Gillian Flynn",
         genre: "Thriller",
-        image: "/Images/Gone Girl.jpg",
+        image: "Images/Gone Girl.jpg",
         synopsis: "A man becomes the prime suspect in his wife's disappearance, exposing manipulative dynamics.",
         series: ["None"],
         reviews: [
@@ -502,7 +502,7 @@ const bookData = [
         title: "Before I Go to Sleep",
         author: "S.J. Watson",
         genre: "Thriller",
-        image: "/Images/Before I Go to Sleep.jpg",
+        image: "Images/Before I Go to Sleep.jpg",
         synopsis: "A woman wakes every day with no memory and tries to reconstruct the truth about her past.",
         series: [
            "None"
@@ -517,7 +517,7 @@ const bookData = [
         title: "Dark Places",
         author: "Gillian Flynn",
         genre: "Thriller",
-        image: "/Images/Dark Places.jpg",
+        image: "Images/Dark Places.jpg",
         synopsis: "A woman investigates her familys past after surviving a massacre, uncovering dark truths.",
         series: ["None"],
         reviews: [
@@ -530,7 +530,7 @@ const bookData = [
         title: "I Am Watching You",
         author: "Teresa Driscoll",
         genre: "Thriller",
-        image: "/Images/I Am Watching You.jpg",
+        image: "Images/I Am Watching You.jpg",
         synopsis: "A woman witnesses mysterious disappearances and becomes entangled in a suspenseful investigation.",
         series: ["None"],
         reviews: [
@@ -543,7 +543,7 @@ const bookData = [
         title: "Treasure Island",
         author: "Robert Louis Stevenson",
         genre: "Adventure",
-        image: "/Images/Treasure Island.jpg",
+        image: "Images/Treasure Island.jpg",
         synopsis: "Young Jim Hawkins embarks on a perilous voyage to find pirate treasure, encountering danger and mutiny.",
         series: ["None"],
         reviews: [
@@ -555,7 +555,7 @@ const bookData = [
         title: "The Lost World",
         author: "Arthur Conan Doyle",
         genre: "Adventure",
-        image: "/Images/The Lost World.jpg",
+        image: "Images/The Lost World.jpg",
         synopsis: "Explorers find a plateau inhabited by prehistoric creatures, facing adventure and scientific discovery.",
         series: ["None"],
         reviews: [
@@ -568,7 +568,7 @@ const bookData = [
         title: "Life of Pi",
         author: "Yann Martel",
         genre: "Adventure",
-        image: "/Images/Life of Pi.jpg",
+        image: "Images/Life of Pi.jpg",
         synopsis: "A boy survives a shipwreck at sea with a Bengal tiger, exploring survival, faith, and resilience.",
         series: ["None"],
         reviews: [
@@ -581,7 +581,7 @@ const bookData = [
         title: "The Call of the Wild",
         author: "Jack London",
         genre: "Adventure",
-        image: "/Images/The Call of the Wild.jpg",
+        image: "Images/The Call of the Wild.jpg",
         synopsis: "A domesticated dog is forced into survival in the Yukon wilderness, reconnecting with primal instincts.",
         series: ["None"],
         reviews: [
@@ -594,7 +594,7 @@ const bookData = [
         title: "The Jungle Book",
         author: "Rudyard Kipling",
         genre: "Adventure",
-        image: "/Images/The Jungle Book.jpg",
+        image: "Images/The Jungle Book.jpg",
         synopsis: "Mowgli grows up in the jungle, learning lessons about survival, friendship, and the law of the wild.",
         series: [
             "The Second Jungle Book"
@@ -609,7 +609,7 @@ const bookData = [
         title: "Robinson Crusoe",
         author: "Daniel Defoe",
         genre: "Adventure",
-        image: "/Images/Robinson Crusoe.jpg",
+        image: "Images/Robinson Crusoe.jpg",
         synopsis: "A shipwrecked man survives on a deserted island, facing solitude, resourcefulness, and encounters with natives.",
         series: [
             "The Farther Adventures of Robinson Crusoe"
@@ -624,7 +624,7 @@ const bookData = [
         title: "Sapiens: A Brief History of Humankind",
         author: "Yuval Noah Harari",
         genre: "Non-Fiction",
-        image: "/Images/Sapien.jpg",
+        image: "Images/Sapien.jpg",
         synopsis: "Explores human evolution, societies, and forces shaping past, present, and future.",
         series: [],
         reviews: [
@@ -637,7 +637,7 @@ const bookData = [
         title: "Becoming",
         author: "Michelle Obama",
         genre: "Non-Fiction",
-        image: "/Images/Becoming.jpg",
+        image: "Images/Becoming.jpg",
         synopsis: "Memoir of the former First Lady, tracing her life from childhood to the White House and beyond.",
         series: [
             "Homo Deus",
@@ -653,7 +653,7 @@ const bookData = [
         title: "Educated",
         author: "Tara Westover",
         genre: "Non-Fiction",
-        image: "/Images/Educated.jpg",
+        image: "Images/Educated.jpg",
         synopsis: "A woman raised in a strict household pursues education and independence against all odds.",
         series: [
             "None"
@@ -668,7 +668,7 @@ const bookData = [
         title: "The Diary of a Young Girl",
         author: "Anne Frank",
         genre: "Non-Fiction",
-        image: "/Images/The Diary of a Young Girl.jpg",
+        image: "Images/The Diary of a Young Girl.jpg",
         synopsis: "The personal diary of Anne Frank provides a moving account of life in hiding during the Nazi occupation.",
         series: [
             "None"
@@ -683,7 +683,7 @@ const bookData = [
         title: "The Immortal Life of Henrietta Lacks",
         author: "Rebecca Skloot",
         genre: "Non-Fiction",
-        image: "/Images/The Immortal Life of Henrietta Lacks.jpg",
+        image: "Images/The Immortal Life of Henrietta Lacks.jpg",
         synopsis: "Explores the life and legacy of Henrietta Lacks, whose cells became vital to medical research without her consent.",
         series: [
             "None"
@@ -698,7 +698,7 @@ const bookData = [
         title: "Unbroken",
         author: "Laura Hillenbrand",
         genre: "Non-Fiction",
-        image: "/Images/Unbroken.jpg",
+        image: "Images/Unbroken.jpg",
         synopsis: "Story of Olympian and WWII bombardier Louis Zamperini surviving extreme adversity and imprisonment.",
         series: [
             "None"
@@ -712,7 +712,7 @@ const bookData = [
         title: "The Wright Brothers",
         author: "David McCullough",
         genre: "Non-Fiction",
-        image: "/Images/The Wright Brothers.jpg",
+        image: "Images/The Wright Brothers.jpg",
         synopsis: "Chronicles the lives of Orville and Wilbur Wright, pioneers of aviation, and the challenges they overcame.",
         series: [
             "None"
@@ -727,7 +727,7 @@ const bookData = [
         title: "Outliers",
         author: "Malcolm Gladwell",
         genre: "Non-Fiction",
-        image: "/Images/Outliers.jpg",
+        image: "Images/Outliers.jpg",
         synopsis: "Analyzes factors contributing to success, emphasizing culture, opportunity, and environment over talent alone.",
         series: [
             "None"
