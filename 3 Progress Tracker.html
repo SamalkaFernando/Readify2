@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Tracker</title>
+    <link rel="stylesheet" href="/Styles/3 Progress Tracker.css">
+</head>
+<body>
+    <!--navbar-->
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/Images/logo.jpg" alt="logo">
+            </div>
+
+            <div class="nav-links" id="navLinks">
+                <a href="/Index/index.html">Home</a>
+                <a href="/Index/2 Book Explorer.html">Explore Books</a>
+                <a href="/Index/3 Progress Tracker.html">Progress Tracker</a>
+                <a href="/Index/4 Book Recommender.html">Book Recommender</a>
+                <a href="/Index/5 Reading Flow.html">Reading Flow</a>
+                <a href="/Index/6 Feedback.html">Feedback</a>
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            
+            </div>
+        </nav>
+
+<!-- ================= HEADER ================= -->
+<header>
+    <h1>Reading Progress Tracker</h1>
+    <p>Track your reading progress and finish time</p>
+</header>
+
+<!-- ================= MAIN ================= -->
+<main>
+
+    <!-- INPUT FORM -->
+    <section class="tracker">
+        <h2>Enter Reading Details</h2>
+
+        <label>Total Pages</label>
+        <input type="number" id="totalPages" required>
+
+        <label>Pages Read</label>
+        <input type="number" id="pagesRead" required>
+
+        <label>Daily Reading Speed (pages/day)</label>
+        <input type="number" id="readingSpeed" required>
+
+        <button id="calculateBtn">Calculate Progress</button>
+
+        <!-- Error Message -->
+        <p id="errorMsg">⚠ Please fill out all fields correctly</p>
+    </section>
+
+    <!-- RESULTS -->
+    <section class="results">
+        <h2>Your Progress</h2>
+
+        <p id="percentText">0% completed</p>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+
+        <p id="finishTime">Estimated finish time: </p>
+
+        <button id="saveBtn">Save Progress</button>
+        <button id="resetBtn">Calculate Again</button>
+
+        <p id="successMsg">✅ Progress saved successfully!</p>
+    </section>
+
+</main>
+<footer class="site-footer">
+        <div class="footer-container">
+
+        <!-- Quick Links -->
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="/Index/index.html">Home</a></li>
+                <li><a href="/Index/2 Book Explorer.html">Book Explorer</a></li>
+                <li><a href="/Index/3 Progress Tracker.html">Progress Tracker</a></li>
+                <li><a href="/Index/4 Book Recommender.html">Book Recommender</a></li>
+                <li><a href="/Index/5 Reading Flow.html">Reading Flow</a></li>
+                <li><a href="/Index/6 Feedback.html">Feedback</a></li>
+            </ul>
+        </div>
+
+        <!-- Genres -->
+        <div class="footer-section">
+            <h4>Popular Genres</h4>
+            <ul>
+                <li>Fantasy</li>
+                <li>Science Fiction</li>
+                <li>Mystery</li>
+                <li>Romance</li>
+                <li>Thriller</li>
+            </ul>
+        </div>
+
+        <!-- Social Media -->
+        <div class="footer-section">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook">🌐</a>
+                <a href="#" aria-label="Instagram">📸</a>
+                <a href="#" aria-label="Twitter">🐦</a>
+                <a href="#" aria-label="Email">✉️</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bottom Footer -->
+    <div class="footer-bottom">
+        <p>© 2025 Book Explorer | All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="/Java/3 Progress Tracker.js"></script>
+</body>
+</html>

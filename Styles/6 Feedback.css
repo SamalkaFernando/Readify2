@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*navbar*/
+.navbar {
+    display: flex;
+    justify-content: space-between; /*logo left & links on the right*/
+    align-items: center;
+    padding:0 20px;
+    background-color: #2c7be5;
+    color: #fff;
+    height: 60px;
+}
+
+.logo img {
+    height:60px;
+    width: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color:  black;
+    text-decoration: none;
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #0d458e;
+}
+
+/*hamburger menu*/
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+}
+
+body {
+    margin: 0;
+    background: #74afea;
+}
+
+header {
+    background: #2c7be5;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/*Form*/
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+/*button */
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background: #2c7be5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1f5fbf;
+}
+
+/*Success message */
+#successMsg {
+    display: none;           /* Hidden by default */
+    margin-top: 15px;
+    color: green;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*Feedback */
+#feedbackList {
+    margin-top: 40px;
+}
+
+.feedback-card {
+    background: white;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.rating {
+    color: orange;
+    font-size: 18px;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    width: 100%;
+    text-align: left;
+    background: #2c7be5;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.faq-answer {
+    display: none; /* Hidden by default */
+    padding: 10px;
+    background: #f0f0f0;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.site-footer {
+    background-color: #497dc1;
+    color: #ffffff;
+    padding: 40px 20px 10px;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section h3,
+.footer-section h4 {
+    margin-bottom: 15px;
+    color: #f4c430;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #f4c430;
+}
+
+.social-links a {
+    font-size: 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: transform 0.3s;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #444;
+    margin-top: 30px;
+    padding-top: 10px;
+    font-size: 13px;
+    color: #ccc;
+}
+
+/*Tablet view*/
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .nav-links {
+        gap: 15px;
+    }    
+    .nav-links a {
+        font-size: 20px;
+    }
+    main {
+    max-width: 90%; /* slightly wider on tablet */
+    margin: 25px auto;
+    padding: 18px;
+  }
+
+  /* Form */
+  form {
+    padding: 18px;
+    border-radius: 8px;
+  }
+
+  /* Labels and Inputs */
+  label {
+    font-size: 15px;
+  }
+  input, select, textarea {
+    padding: 9px;
+    font-size: 14px;
+  }
+
+  /* Buttons */
+  button {
+    padding: 9px 16px;
+    font-size: 14px;
+  }
+
+  /* Success Message */
+  #successMsg {
+    font-size: 14px;
+  }
+
+  /* Feedback cards */
+  .feedback-card {
+    padding: 12px;
+    margin-top: 12px;
+  }
+
+  .rating {
+    font-size: 17px;
+  }
+
+  /* FAQ items */
+  .faq-question {
+    padding: 10px;
+    font-size: 15px;
+  }
+  .faq-answer {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  /* Footer */
+  .footer-container {
+    gap: 20px;
+  }
+  .footer-section ul li {
+    font-size: 13px;
+  }
+  .social-links a {
+    font-size: 18px;
+    margin-right: 8px;
+  }
+  .footer-bottom {
+    font-size: 12px;
+  }
+}
+
+/*mobile view*/
+@media screen and (max-width:768px) {
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: -100%;
+        flex-direction: column;
+        width: 100%;
+        background-color: #96c0f6;
+        transition: 0.3s;
+    }    
+    .nav-links.active {
+        right: 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+    .nav-links a {
+        padding: 15px 20px;
+    }
+     /* Header */
+  header {
+    padding: 15px;
+    font-size: 18px;
+  }
+
+  /* Main container */
+  main {
+    max-width: 95%;
+    margin: 15px auto;
+    padding: 12px;
+  }
+
+  /* Form */
+  form {
+    padding: 15px;
+    border-radius: 6px;
+  }
+
+  /* Labels and Inputs */
+  label {
+    font-size: 14px;
+  }
+  input, select, textarea {
+    padding: 8px;
+    font-size: 13px;
+  }
+
+  /* Buttons full width and smaller */
+  button {
+    width: 100%; /* stack buttons full width */
+    padding: 8px 0;
+    font-size: 13px;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+
+  /* Success Message */
+  #successMsg {
+    font-size: 13px;
+  }
+
+  /* Feedback cards */
+  .feedback-card {
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  .rating {
+    font-size: 16px;
+  }
+
+  /* FAQ items */
+  .faq-question {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .faq-answer {
+    padding: 7px;
+    font-size: 13px;
+  }
+
+  /* Footer stacked columns */
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    text-align: center;
+  }
+  .footer-section ul li {
+    font-size: 12px;
+  }
+  .social-links a {
+    font-size: 16px;
+    margin-right: 6px;
+  }
+  .footer-bottom {
+    font-size: 11px;
+  }
+}

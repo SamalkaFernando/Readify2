@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Styles/4 Book Recommender.css">
+</head>
+<body>
+
+    <!--navbar-->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="/Images/logo.jpg" alt="logo">
+        </div>
+
+        <div class="nav-links" id="navLinks">
+            <a href="/Index/index.html">Home</a>
+            <a href="/Index/2 Book Explorer.html">Explore Books</a>
+            <a href="/Index/3 Progress Tracker.html">Progress Tracker</a>
+            <a href="/Index/4 Book Recommender.html">Book Recommender</a>
+            <a href="/Index/5 Reading Flow.html">Reading Flow</a>
+            <a href="/Index/6 Feedback.html">Feedback</a>
+        </div>
+
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>        
+        </div>
+    </nav>
+
+    <header>
+        <h1>Random Book Recommender</h1>
+        <p>Not sure what to read? Let us choose!</p>
+    </header>
+
+    <main>
+
+        <!-- Selection Form -->
+        <section class="controls">
+            <label>Choose Genre</label>
+            <select id="genreSelect">
+                <option value="all">All</option>
+                <option value="Fantasy">Fantasy</option>
+                <option value="Science-Fiction">Science-Fiction</option>
+                <option value="Mystery">Mystery</option>
+                <option value="Romance">Romance</option>
+                <option value="Horror">Horror</option>
+                <option value="Thriller">Thriller</option>
+            </select>
+
+            <label>Choose Length</label>
+            <select id="lengthSelect">
+                <option value="all">All</option>
+                <option value="short">Short (&lt; 300 pages)</option>
+                <option value="medium">Medium (300-500 pages)</option>
+                <option value="long">Long (&gt; 500 pages)</option>
+            </select>
+
+            <button id="pickBtn">Recommend a Book</button>
+        </section>
+
+        <!-- Result -->
+        <section class="result">
+            <h2>Book Recommendation</h2>
+
+            <div id="bookCard" class="hidden">
+                <h3 id="bookTitle"></h3>
+                <p id="bookAuthor"></p>
+                <p id="bookInfo"></p>
+
+                <button id="saveBtn">Save to Reading List</button>
+                <button id="againBtn">Pick Again</button>
+            </div>
+
+            <p id="savedMsg">✅ Saved to your reading list!</p>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/Index/index.html">Home</a></li>
+                    <li><a href="/Index/2 Book Explorer.html">Book Explorer</a></li>
+                    <li><a href="/Index/3 Progress Tracker.html">Progress Tracker</a></li>
+                    <li><a href="/Index/4 Book Recommender.html">Book Recommender</a></li>
+                    <li><a href="/Index/5 Reading Flow.html">Reading Flow</a></li>
+                    <li><a href="/Index/6 Feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+
+            <!-- Genres -->
+            <div class="footer-section">
+                <h4>Popular Genres</h4>
+                <ul>
+                    <li>Fantasy</li>
+                    <li>Science Fiction</li>
+                    <li>Mystery</li>
+                    <li>Romance</li>
+                    <li>Thriller</li>
+                </ul>
+            </div>
+
+            <!-- Social Media -->
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">🌐</a>
+                    <a href="#" aria-label="Instagram">📸</a>
+                    <a href="#" aria-label="Twitter">🐦</a>
+                    <a href="#" aria-label="Email">✉️</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bottom Footer -->
+        <div class="footer-bottom">
+            <p>© 2025 Book Explorer | All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="/Java/4 Book Recommender.js"></script>
+</body>
+</html>

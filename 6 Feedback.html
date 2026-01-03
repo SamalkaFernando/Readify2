@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Styles/6 Feedback.css">
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../Images/logo.jpg" alt="logo">
+        </div>
+
+        <div class="nav-links" id="navLinks">
+            <a href="/Index/index.html">Home</a>
+            <a href="/Index/2 Book Explorer.html">Explore Books</a>
+            <a href="/Index/3 Progress Tracker.html">Progress Tracker</a>
+            <a href="/Index/4 Book Recommender.html">Book Recommender</a>
+            <a href="/Index/5 Reading Flow.html">Reading Flow</a>
+            <a href="/Index/6 Feedback.html">Feedback</a>
+        </div>
+
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+            
+        </div>
+    </nav>
+
+    <header>
+    <h1>User Feedback</h1>
+    <p>Share your thoughts about Book Explorer</p>
+    </header>
+
+    <main>
+
+        <!-- Feedback Form -->
+        <form id="feedbackForm">
+
+            <label for="name">Name</label>
+            <input type="text" id="name" required>
+
+            <label for="rating">Rating</label>
+            <select id="rating" required>
+                <option value="">Select rating</option>
+                <option value="5">★★★★★ Excellent</option>
+                <option value="4">★★★★ Very Good</option>
+                <option value="3">★★★ Good</option>
+                <option value="2">★★ Fair</option>
+                <option value="1">★ Poor</option>
+            </select>
+
+            <label for="message">Feedback</label>
+            <textarea id="message" rows="4" required></textarea>
+
+            <button type="submit">Submit Feedback</button>
+
+            <!-- ✅ SUCCESS MESSAGE (VERY IMPORTANT) -->
+            <p id="successMsg">✅ Thank you! Your feedback has been submitted.</p>
+        </form>
+
+        <!-- Feedback Display -->
+        <section id="feedbackList">
+            <h2>What users say</h2>
+            <div id="feedbackContainer"></div>
+        </section>
+
+        <section id="faqSection">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <button class="faq-question">What is Book Explorer?</button>
+                <div class="faq-answer">
+                    <p>Book Explorer is a website that lets you browse, search, and review books by genre, title, or author.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">How do I submit feedback?</button>
+                <div class="faq-answer">
+                    <p>Fill in your name, rating, and message in the feedback form, then click Submit. Your feedback will appear below.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">Can I filter books?</button>
+                <div class="faq-answer">
+                    <p>Yes! Use the search bar or genre dropdown in the Book Explorer page to filter books dynamically.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+
+        <!-- Quick Links -->
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="/Index/index.html">Home</a></li>
+                <li><a href="/Index/2 Book Explorer.html">Book Explorer</a></li>
+                <li><a href="/Index/3 Progress Tracker.html">Progress Tracker</a></li>
+                <li><a href="/Index/4 Book Recommender.html">Book Recommender</a></li>
+                <li><a href="/Index/5 Reading Flow.html">Reading Flow</a></li>
+                <li><a href="/Index/6 Feedback.html">Feedback</a></li>
+            </ul>
+        </div>
+
+        <!-- Genres -->
+        <div class="footer-section">
+            <h4>Popular Genres</h4>
+            <ul>
+                <li>Fantasy</li>
+                <li>Science Fiction</li>
+                <li>Mystery</li>
+                <li>Romance</li>
+                <li>Thriller</li>
+            </ul>
+        </div>
+
+        <!-- Social Media -->
+        <div class="footer-section">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook">🌐</a>
+                <a href="#" aria-label="Instagram">📸</a>
+                <a href="#" aria-label="Twitter">🐦</a>
+                <a href="#" aria-label="Email">✉️</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bottom Footer -->
+    <div class="footer-bottom">
+        <p>© 2025 Book Explorer | All rights reserved.</p>
+    </div>
+</footer>
+
+    <script src="/Java/6 Feedback.js"></script>
+</body>
+</html>

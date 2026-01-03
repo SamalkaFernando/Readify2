@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*navbar*/
+.navbar {
+    display: flex;
+    justify-content: space-between; /*logo left & links on the right*/
+    align-items: center;
+    padding:0 20px;
+    background-color: #2c7be5;
+    color: #fff;
+    height: 60px;
+    position: relative;
+    z-index: 1100;
+}
+
+.logo img {
+    height:60px;
+    width: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color:  black;
+    text-decoration: none;
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #0d458e;
+}
+
+/*hamburger menu*/
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+}
+
+.flow-bg {
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(120deg, #1e3c72, #2a5298);
+    z-index: -1;
+    animation: gradient-slide 12s infinite alternate;
+}
+
+@keyframes gradient-slide {
+    from { filter: brightness(1); }
+    to { filter: brightness(1.2); }
+}
+
+/* ================= BASE STYLES ================= */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+}
+
+.flow-header {
+    text-align: center;
+    padding: 30px;
+}
+
+.flow-main {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* ================= SECTIONS ================= */
+section {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 30px;
+    animation: fade-up 0.8s ease;
+}
+
+@keyframes fade-up {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ================= BUTTONS ================= */
+.sound-btn,
+.completed-btn {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 8px;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+.sound-btn:hover,
+.completed-btn:hover {
+    transform: scale(1.05);
+}
+
+#btn-play-sound {
+    background: #28a745;
+    color: white;
+}
+
+#btn-stop-sound {
+    background: #dc3545;
+    color: white;
+}
+
+#btn-add-book {
+    background: #4a90e2;
+    color: white;
+}
+
+/* ================= INPUT ================= */
+.completed-input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+/* ================= COMPLETED BOOK LIST ================= */
+.completed-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.completed-list li {
+    background: rgba(0,0,0,0.3);
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    animation: pop-in 0.4s ease;
+}
+
+@keyframes pop-in {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.site-footer {
+    background-color: #497dc1;
+    color: #ffffff;
+    padding: 40px 20px 10px;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section h3,
+.footer-section h4 {
+    margin-bottom: 15px;
+    color: #f4c430;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #f4c430;
+}
+
+.social-links a {
+    font-size: 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: transform 0.3s;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #444;
+    margin-top: 30px;
+    padding-top: 10px;
+    font-size: 13px;
+    color: #ccc;
+}
+
+/*Tablet view*/
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .nav-links {
+        gap: 15px;
+    }    
+    .nav-links a {
+        font-size: 20px;
+    }
+     .flow-main {
+    max-width: 90%; /* slightly wider for tablet */
+    margin: 25px auto;
+    padding: 18px;
+  }
+
+  /* Sections */
+  section {
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+  }
+
+  /* Buttons */
+  .sound-btn,
+  .completed-btn {
+    padding: 9px 16px;
+    font-size: 14px;
+    margin-top: 8px;
+    margin-right: 6px;
+  }
+
+  /* Inputs */
+  .completed-input {
+    padding: 9px;
+    font-size: 14px;
+  }
+
+  /* Completed list items */
+  .completed-list li {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  /* Footer */
+  .footer-container {
+    gap: 20px;
+  }
+  .footer-section ul li {
+    font-size: 13px;
+  }
+  .social-links a {
+    font-size: 18px;
+    margin-right: 8px;
+  }
+  .footer-bottom {
+    font-size: 12px;
+  }
+}
+
+/*mobile view*/
+@media screen and (max-width:768px) {
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: -100%;
+        flex-direction: column;
+        width: 100%;
+        background-color: #96c0f6;
+        transition: 0.3s;
+        z-index: 1000;
+    }    
+    .nav-links.active {
+        right: 0;
+        z-index: 1000;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+    .nav-links a {
+        padding: 15px 20px;
+    }
+    .flow-header {
+    padding: 20px 15px;
+    font-size: 18px;
+  }
+
+  /* Main container */
+  .flow-main {
+    max-width: 95%;
+    margin: 15px auto;
+    padding: 12px;
+  }
+
+  /* Sections */
+  section {
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  /* Buttons full width and smaller */
+  .sound-btn,
+  .completed-btn {
+    width: 100%;
+    padding: 8px 0;
+    font-size: 14px;
+    margin-top: 8px;
+    margin-right: 0;
+    border-radius: 10px;
+  }
+
+  /* Inputs */
+  .completed-input {
+    width: 100%;
+    padding: 8px;
+    font-size: 13px;
+  }
+
+  /* Completed list items */
+  .completed-list li {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  /* Footer stacked columns */
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    text-align: center;
+  }
+  .footer-section ul li {
+    font-size: 12px;
+  }
+  .social-links a {
+    font-size: 16px;
+    margin-right: 6px;
+  }
+  .footer-bottom {
+    font-size: 11px;
+  }
+}
