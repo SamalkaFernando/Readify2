@@ -5,9 +5,8 @@ const navLinks = document.getElementById('navLinks');
 hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
-/* =====================================================
-   READING PROGRESS TRACKER LOGIC
-===================================================== */
+// READING PROGRESS TRACKER LOGIC
+
 
 // Get elements
 const totalPagesInput = document.getElementById("totalPages");

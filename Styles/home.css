@@ -62,7 +62,7 @@ body {
   grid-template-columns: 1fr 1.9fr;
   align-items: center;
   padding: 6px 20px 6px;
-  background: 74afea;
+  background: #74afea;
   min-height: 90vh;
 }
 
