@@ -4,50 +4,50 @@
     box-sizing: border-box;
 }
 
-/*navbar*/
-.navbar {
-    display: flex;
-    justify-content: space-between; /*logo left & links on the right*/
-    align-items: center;
-    padding:0 20px;
-    background-color: #2c7be5;
-    color: #fff;
-    height: 60px;
+html, body {
+  overflow-x: hidden;
 }
 
+/* navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  height: 60px;
+  background-color: #2c7be5;
+  position: relative;
+}
+
+/* logo */
 .logo img {
-    height:60px;
-    width: auto;
+  height: 50px;
 }
 
 .nav-links {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  list-style: none;
+  gap: 20px;
 }
 
 .nav-links a {
-    color:  black;
-    text-decoration: none;
-    font-size: 25px;
-    transition: 0.3s;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
 }
 
-.nav-links a:hover {
-    color: #0d458e;
-}
-
-/*hamburger menu*/
+/* HAMBURGER */
 .hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 5px;
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
 }
 
 .hamburger span {
-    width: 25px;
-    height: 3px;
-    background-color: black;
+  width: 25px;
+  height: 3px;
+  background: black;
 }
 
 body {
@@ -303,12 +303,29 @@ body {
 
 /*Tablet view*/
 @media screen and (max-width: 1024px) and (min-width: 769px) {
-    .nav-links {
-        gap: 15px;
-    }    
-    .nav-links a {
-        font-size: 20px;
-    }
+  .hamburger {
+    display: flex;
+  }
+  .nav-links {
+    position: fixed;
+    top: 60px;
+    right: 0;
+    width: 320px;
+    height: calc(100vh - 60px);
+    background-color: #96c0f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 40px;
+    gap: 30px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    will-change: transform;
+  }
+  .nav-links.active {
+    transform: translateX(0);
+  }
     /* HERO */
   .hero {
     grid-template-columns: 1fr 1.5fr;
@@ -405,25 +422,30 @@ body {
 
 /*mobile view*/
 @media screen and (max-width:768px) {
-    .nav-links {
-        position: absolute;
-        top: 60px;
-        right: -100%;
-        flex-direction: column;
-        width: 100%;
-        background-color: #96c0f6;
-        transition: 0.3s;
-    }    
-    .nav-links.active {
-        right: 0;
-    }
+  .hamburger {
+    display: flex;
+  }
 
-    .hamburger {
-        display: flex;
-    }
-    .nav-links a {
-        padding: 15px 20px;
-    }
+  .nav-links {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: #96c0f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 40px;
+    gap: 30px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    will-change: transform;
+  }
+  .nav-links.active {
+    transform: translateX(0);
+  }
     /* HERO */
   .hero {
     grid-template-columns: 1fr;
